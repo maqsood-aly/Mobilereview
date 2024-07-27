@@ -85,9 +85,6 @@ class HomeController extends Controller
             ->with(['brand', 'model', 'features', 'pros', 'cons'])
             ->firstOrFail();
 
-
-        // $product2 = Product::where('slug', $device2)->firstOrFail();
-
         return view('user.comparison', compact('product1', 'product2'));
     }
     public function search_products(Request $request)
