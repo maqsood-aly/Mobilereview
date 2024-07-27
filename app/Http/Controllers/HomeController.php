@@ -25,9 +25,6 @@ class HomeController extends Controller
         return view('user.home', compact('products', 'latestProducts'));
     }
 
-
-
-
     public function show($slug)
     {
         // Fetch product with its features, brand, and model
